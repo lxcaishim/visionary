@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VISION</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <header class="nav">
+        <div class="brand">VISION</div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <nav class="nav-links" id="nav-links">
+          <a href="#about">Vibe</a>
+          <a href="#how-to-buy">How To Buy</a>
+          <a href="#mission">Roadmap</a>
+          <a href="#chart">Live Chart</a>
+        </nav>
+      </header>
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://x.com" target="_blank" rel="noreferrer">𝕏</a>
+          <div class="ca-block" role="group" aria-label="Contract address placeholder">
+            <span id="ca-text">CA: TBD</span>
+            <button id="copy-ca-btn" type="button">Copy</button>
+          </div>
+          <button class="btn btn-buy" type="button" id="buy-btn">
+            <span class="buy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.5L21 7H7.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="10" cy="19" r="1.6" fill="currentColor"></circle>
+                <circle cx="17" cy="19" r="1.6" fill="currentColor"></circle>
+              </svg>
+            </span>
+            Buy
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero-blend" aria-hidden="true"></div>
+    <section class="vision-banner" aria-label="Moving Vision banner">
+      <div class="vision-track">
+        <div class="vision-track-group" aria-hidden="true">
+          <span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span>
+        </div>
+        <div class="vision-track-group" aria-hidden="true">
+          <span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span>
+        </div>
+        <div class="vision-track-group" aria-hidden="true">
+          <span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span><i></i><span>VISION</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <h2>The Vibe</h2>
+      <p>
+        Vision is built around clean focus and long-range conviction. No noise, no rush, just disciplined execution.
+      </p>
+      <div class="vibe-grid">
+        <img src="assets/vibe-1.png" alt="Vision mood board style 1" />
+        <img src="assets/vibe-2.png" alt="Vision mood board style 2" />
+      </div>
+    </section>
+
+    <section class="section how-to-buy" id="how-to-buy">
+      <h2>How To Buy</h2>
+      <div class="steps">
+        <article class="card step-card">
+          <span class="step-label">Step 01</span>
+          <h3>Create a Phantom Wallet</h3>
+          <p>Download Phantom and set up your wallet securely.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-label">Step 02</span>
+          <h3>Buy SOL</h3>
+          <p>Purchase SOL on your exchange and send it to Phantom.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-label">Step 03</span>
+          <h3>Open pump.fun</h3>
+          <p>Go to pump.fun and search for the official Vision listing.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-label">Step 04</span>
+          <h3>Swap SOL for Vision</h3>
+          <p>Confirm the pair, swap your SOL, and hold with conviction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section mission" id="mission">
+      <h2>Roadmap</h2>
+      <p>Track every phase. Click a milestone to lock focus on what ships next.</p>
+      <div class="roadmap-ui">
+        <div class="roadmap-pills" role="tablist" aria-label="Roadmap phases">
+          <button class="roadmap-pill is-active" type="button" data-roadmap="1">Phase 1</button>
+          <button class="roadmap-pill" type="button" data-roadmap="2">Phase 2</button>
+          <button class="roadmap-pill" type="button" data-roadmap="3">Phase 3</button>
+          <button class="roadmap-pill" type="button" data-roadmap="4">Phase 4</button>
+        </div>
+        <article class="roadmap-panel" id="roadmap-panel">
+          <span class="roadmap-phase-tag">Phase 1</span>
+          <span class="roadmap-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+              <path d="M12 3l7 7-7 11-7-11 7-7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path>
+              <path d="M12 7.5v5.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
+            </svg>
+          </span>
+          <h3>Ignition</h3>
+          <p>Brand reveal, social push, and first wave believers onboard.</p>
+          <ul>
+            <li>Hero campaign and visual identity launch</li>
+            <li>X growth sprint and meme distribution</li>
+            <li>Community channels activated</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section chart" id="chart">
+      <h2>Live Chart</h2>
+      <p class="chart-note">The widget auto-loads once you add the official contract address in <code>script.js</code>.</p>
+      <div class="card chart-card">
+        <div id="dexscreener-widget"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logos" aria-label="Social logos">
+      <a class="x-logo" href="https://x.com" target="_blank" rel="noreferrer" aria-label="X profile">𝕏</a>
+      <a class="pump-logo" href="https://pump.fun" target="_blank" rel="noreferrer" aria-label="Pump dot fun">
+        <img src="https://pump.fun/logo.png" alt="pump.fun logo" />
+      </a>
+    </div>
+    <p>VISION © <span id="year"></span> — Built with conviction.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
