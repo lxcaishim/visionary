@@ -259,6 +259,7 @@ body::before {
   position: relative;
   z-index: 2;
   transition: transform 0.45s ease, opacity 0.45s ease;
+  scroll-margin-top: 5.5rem;
 }
 .section + .section { border-top: 1px solid rgba(110, 104, 95, 0.22); }
 .about::before,

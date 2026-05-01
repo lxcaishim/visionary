@@ -9,6 +9,20 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("is-open");
 });
 
+navLinks.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const href = link.getAttribute("href");
+    if (!href || href.length < 2) return;
+    const target = document.querySelector(href);
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    navLinks.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    history.replaceState(null, "", href);
+  });
+});
+
 const copyCaBtn = document.getElementById("copy-ca-btn");
 const caText = document.getElementById("ca-text");
 const buyBtn = document.getElementById("buy-btn");
