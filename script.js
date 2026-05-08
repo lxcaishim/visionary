@@ -1,4 +1,7 @@
+const TOKEN_MINT = "JAQLyV3MDt4KxJDfCZp9ZsP4YhACRZPQfKwiPo6fpump";
+
 document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("ca-text").textContent = `CA: ${TOKEN_MINT}`;
 
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
@@ -24,11 +27,9 @@ navLinks.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 const copyCaBtn = document.getElementById("copy-ca-btn");
-const caText = document.getElementById("ca-text");
-const buyBtn = document.getElementById("buy-btn");
 copyCaBtn.addEventListener("click", async () => {
   try {
-    await navigator.clipboard.writeText(caText.textContent.trim());
+    await navigator.clipboard.writeText(TOKEN_MINT);
     copyCaBtn.textContent = "Copied";
     setTimeout(() => {
       copyCaBtn.textContent = "Copy";
@@ -39,10 +40,6 @@ copyCaBtn.addEventListener("click", async () => {
       copyCaBtn.textContent = "Copy";
     }, 1200);
   }
-});
-
-buyBtn.addEventListener("click", () => {
-  window.alert("Buy link goes live soon.");
 });
 
 function updateScrollMood() {
@@ -143,9 +140,8 @@ roadmapPills.forEach((pill) => {
 
 const dexscreenerContainer = document.getElementById("dexscreener-widget");
 
-// Fill these when the contract address goes live.
 const dexChain = "solana";
-const contractAddress = "";
+const contractAddress = TOKEN_MINT;
 
 if (contractAddress.trim().length > 0) {
   const iframe = document.createElement("iframe");
